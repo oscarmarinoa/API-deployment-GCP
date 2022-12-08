@@ -1,8 +1,8 @@
 from fastapi import FastAPI, Depends
-from . import schemas, models
+import models
 from .database import engine, SessionLocal
 from sqlalchemy.orm import Session
-from . import Funciones
+import Funciones
 
 
 app = FastAPI(title='Sismos', description='En esta APi podras encontrar información acerca de eventos sísmicos y tsunamis ocurridos en Chile, Japón y Estados Unidos. Adicionalmente, permite hacer consultas de los volcanes en dichos paises.')
