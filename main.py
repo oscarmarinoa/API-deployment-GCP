@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Depends
 import models
-from .database import engine, SessionLocal
+from database import engine, SessionLocal
 from sqlalchemy.orm import Session
 import Funciones
 
